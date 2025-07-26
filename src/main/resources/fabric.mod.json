@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "instantwood_mt",
+	"version": "1.0.0",
+	"name": "InstantWood",
+	"description": "Allows wood blocks to break instantly when using an Efficiency V axe with Haste II, matching stone-breaking behavior.",
+	"authors": [
+		"MARS Team MC",
+		"MDen",
+		"cocer"
+	],
+	"contact": {
+		"homepage": "https://github.com/MARSTeamMC/InstantWood",
+		"sources": "https://github.com/MARSTeamMC/InstantWood"
+	},
+	"license": "BSD 2-Clause License",
+	"icon": "assets/instantwood_mt/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mars.instantwood_mt.InstantWood"
+		]
+	},
+	"mixins": [
+		"instantwood_mt.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": ">=1.21.0 <=1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
