@@ -15,7 +15,6 @@ public class AbstractBlockMixin {
 	@Inject(method = "calcBlockBreakingDelta", at = @At("RETURN"), cancellable = true)
 	private void fixSpeed(BlockState state, PlayerEntity player, BlockView world, BlockPos pos, CallbackInfoReturnable<Float> cir) {
 		float result = cir.getReturnValue();
-		System.out.println(result);
 		if (result > 0.46F & player.getMainHandStack().getMiningSpeedMultiplier(state)>=9) {
 			cir.setReturnValue(1.0F);
 		}
