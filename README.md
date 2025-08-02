@@ -4,7 +4,7 @@
 
 **InstantBreak** fixes that. It allows instant mining of many common blocks using the correct tools, enchantments, and effects.
 
-The mod tweaks Minecraft’s break calculation to better match block hardness and logic. It also expands which tools are considered valid for certain blocks — for example, pickaxes can now break glass.
+The mod tweaks Minecraft’s break calculation and also expands which tools are considered valid for certain blocks — for example, pickaxes can now break glass.
 
 ---
 
