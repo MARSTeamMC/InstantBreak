@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "instantbreak_mt",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"name": "InstantBreak",
 	"description": "Enables instant breaking of blocks when using a netherite or stronger tool with Efficiency V and Haste II, mirroring stone-mining speed.",
 	"authors": [

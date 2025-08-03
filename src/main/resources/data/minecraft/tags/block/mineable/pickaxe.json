@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#c:glass_blocks",
+    "#c:glass_panes",
     "minecraft:lever",
     "minecraft:sniffer_egg",
     "minecraft:glowstone",
