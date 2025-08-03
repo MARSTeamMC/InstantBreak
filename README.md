@@ -7,12 +7,6 @@ It also expands which tools are considered valid for certain blocks. For example
 
 ---
 
-### Some Mining With InstantBreak
-![InstantBreak](https://i.imgur.com/xJWh7Az.gif)
-Netherite pickaxe with Efficiency V + Haste II
-
----
-
 ### Features 
 
 **Requirements For Instant Breaking**
