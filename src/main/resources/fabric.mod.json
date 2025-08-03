@@ -3,7 +3,7 @@
 	"id": "instantbreak_mt",
 	"version": "1.2.1",
 	"name": "InstantBreak",
-	"description": "Enables instant breaking of blocks when using a netherite or stronger tool with Efficiency V and Haste II, mirroring stone-mining speed.",
+	"description": "In Minecraft, you can instantly break stone, but not wood, glass, or deepslate. InstantBreak fixes that. It allows instant breaking of most blocks.\nThis mod changes Minecraft’s break calculation for strong, like netherite or gold, tools to instamine easier. For example, you only need a netherite axe with efficiency V to instantly break wood. It also expands which tools are considered valid for certain blocks. For example, pickaxes can now break glass, and axes can break skulls.",
 	"authors": [
 		"MARS Team MC",
 		"MDen",
