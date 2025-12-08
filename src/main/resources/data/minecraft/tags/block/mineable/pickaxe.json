@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "turtle_egg",
     "#c:glass_blocks",
     "#c:glass_panes",
     "minecraft:lever",
