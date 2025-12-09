@@ -37,16 +37,6 @@ It also expands which tools are considered valid for certain blocks. For example
 
 ---
 
-### Compatibility
-
-| Minecraft Version | Loader             | Status       | Version  | Notes                    |
-|-------------------|--------------------|--------------|----------|--------------------------|
-| 1.21 – 1.21.8     | Fabric             | ✅ Supported | Latest   |       |
-|                   |  other mod loaders | 🛠 In Progress    | –     | Support is currently in development |
-| < 1.21            | Fabric / other mod loaders | ❌ Not Supported | –      | Support planned in future versions         |
-
----
-
 ### License
 This project is licensed under the BSD 2-Clause License.
 
