@@ -21,7 +21,7 @@ public class BreakDelayOverlay implements HudRenderCallback {
             PlayerEntity playerEntity = MinecraftClient.getInstance().player;
             if (playerEntity != null) {
                 Arm arm = playerEntity.getMainArm().getOpposite();
-                boolean ItemInOffHand = !playerEntity.getInventory().offHand.getFirst().getItem().equals(Items.AIR);
+                boolean ItemInOffHand = !playerEntity.getInventory().getStack(40).getItem().equals(Items.AIR);
                 int h = 0;
                 if (ItemInOffHand) {
                     h = 29;
