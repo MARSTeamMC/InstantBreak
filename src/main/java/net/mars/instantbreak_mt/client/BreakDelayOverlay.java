@@ -5,10 +5,8 @@ import net.mars.instantbreak_mt.InstantBreak;
 import net.mars.instantbreak_mt.InstantBreakClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Arm;
 import net.minecraft.util.Identifier;
@@ -34,7 +32,7 @@ public class BreakDelayOverlay implements HudRenderCallback {
                     o = i + 91 + 6 + h;
                 }
 
-                drawContext.drawTexture(RenderLayer::getGuiTextured, BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
+                drawContext.drawTexture(BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
             }
         }
     }
