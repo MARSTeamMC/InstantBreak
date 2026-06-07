@@ -19,6 +19,9 @@
 	"entrypoints": {
 		"main": [
 			"net.mars.instantbreak_mt.InstantBreak"
+		],
+		"client": [
+			"net.mars.instantbreak_mt.InstantBreakClient"
 		]
 	},
 	"mixins": [
