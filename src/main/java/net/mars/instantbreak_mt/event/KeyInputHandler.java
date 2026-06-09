@@ -26,7 +26,7 @@ public class KeyInputHandler {
                 KEY_ENABLE_BREAK_DELAY,
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_R,
-                KeyBinding.GAMEPLAY_CATEGORY
+                KeyBinding.Category.GAMEPLAY
         ));
 
         registerKeyInputs();
