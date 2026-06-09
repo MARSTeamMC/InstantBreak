@@ -19,22 +19,24 @@ public class BreakDelayOverlay implements HudRenderCallback {
     public void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
         if (InstantBreakClient.breakDelayEnabled) {
             MinecraftClient client = MinecraftClient.getInstance();
-            PlayerEntity playerEntity = client.player;
-            if (playerEntity != null && !playerEntity.isSpectator() && !client.options.hudHidden) {
-                Arm arm = playerEntity.getMainArm().getOpposite();
-                boolean ItemInOffHand = !playerEntity.getInventory().getStack(40).getItem().equals(Items.AIR);
-                int h = 0;
-                if (ItemInOffHand) {
-                    h = 29;
-                }
-                int i = drawContext.getScaledWindowWidth() / 2;
-                int n = drawContext.getScaledWindowHeight() - 24;
-                int o = i - 91 - 32 - h;
-                if (arm == Arm.RIGHT) {
-                    o = i + 91 + 6 + h;
-                }
+            if (client != null) {
+                PlayerEntity playerEntity = client.player;
+                if (playerEntity != null && !playerEntity.isSpectator() && !client.options.hudHidden) {
+                    Arm arm = playerEntity.getMainArm().getOpposite();
+                    boolean ItemInOffHand = !playerEntity.getInventory().getStack(40).getItem().equals(Items.AIR);
+                    int h = 0;
+                    if (ItemInOffHand) {
+                        h = 29;
+                    }
+                    int i = drawContext.getScaledWindowWidth() / 2;
+                    int n = drawContext.getScaledWindowHeight() - 24;
+                    int o = i - 91 - 32 - h;
+                    if (arm == Arm.RIGHT) {
+                        o = i + 91 + 6 + h;
+                    }
 
-                drawContext.drawTexture(RenderPipelines.GUI_TEXTURED, BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
+                    drawContext.drawTexture(RenderPipelines.GUI_TEXTURED, BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
+                }
             }
         }
     }
