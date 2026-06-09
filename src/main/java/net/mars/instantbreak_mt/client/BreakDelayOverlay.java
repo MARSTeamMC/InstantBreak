@@ -5,7 +5,6 @@ import net.mars.instantbreak_mt.InstantBreak;
 import net.mars.instantbreak_mt.InstantBreakClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;
 import net.minecraft.util.Arm;
@@ -15,7 +14,7 @@ public class BreakDelayOverlay implements HudRenderCallback {
     private static final Identifier BREAK_DELAY_ICON = Identifier.of(InstantBreak.MOD_ID, "textures/hud/break_delay.png");
 
     @Override
-    public void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
+    public void onHudRender(DrawContext drawContext, float v) {
         if (InstantBreakClient.breakDelayEnabled) {
             MinecraftClient client = MinecraftClient.getInstance();
             PlayerEntity playerEntity = client.player;
