@@ -17,8 +17,9 @@ public class BreakDelayOverlay implements HudRenderCallback {
     @Override
     public void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
         if (InstantBreakClient.breakDelayEnabled) {
-            PlayerEntity playerEntity = MinecraftClient.getInstance().player;
-            if (playerEntity != null) {
+            MinecraftClient client = MinecraftClient.getInstance();
+            PlayerEntity playerEntity = client.player;
+            if (playerEntity != null && !playerEntity.isSpectator() && !client.options.hudHidden) {
                 Arm arm = playerEntity.getMainArm().getOpposite();
                 boolean ItemInOffHand = !playerEntity.getInventory().offHand.getFirst().getItem().equals(Items.AIR);
                 int h = 0;
