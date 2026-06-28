@@ -1,10 +1,10 @@
 {
 	"required": true,
 	"package": "net.mars.instantbreak_mt.mixin",
-	"compatibilityLevel": "JAVA_21",
+	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"AbstractBlockMixin",
-		"ClientPlayerInteractionManagerMixin"
+		"BlockBehaviourMixin",
+		"MultiPlayerGameModeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

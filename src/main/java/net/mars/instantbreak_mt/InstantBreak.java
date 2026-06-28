@@ -15,7 +15,7 @@ public class InstantBreak implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModContainer mod = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow();
+		ModContainer mod = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(null);
 		String version = mod.getMetadata().getVersion().getFriendlyString();
 
 		LOGGER.info("[{}] v{} initialized by MARS Team.", MOD_ID, version);
