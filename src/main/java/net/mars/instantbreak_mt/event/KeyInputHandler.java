@@ -16,7 +16,6 @@ public class KeyInputHandler {
         ClientTickEvents.END_CLIENT_TICK.register(minecraftClient -> {
             if (breakDelayKey.wasPressed()) {
                 InstantBreakClient.breakDelayEnabled = !InstantBreakClient.breakDelayEnabled;
-                System.out.println(InstantBreakClient.breakDelayEnabled);
             }
         });
     }
