@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(BlockBehaviour.class)
-public class AbstractBlockMixin {
+public abstract class BlockBehaviourMixin {
 	@Inject(method = "getDestroyProgress", at = @At("RETURN"), cancellable = true)
 	private void fixSpeed(BlockState state, Player player, BlockGetter level, BlockPos pos, CallbackInfoReturnable<Float> cir) {
 		float result = cir.getReturnValue();
