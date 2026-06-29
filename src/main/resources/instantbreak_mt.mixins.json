@@ -3,7 +3,9 @@
 	"package": "net.mars.instantbreak_mt.mixin",
 	"compatibilityLevel": "JAVA_16",
 	"mixins": [
-		"AbstractBlockMixin",
+		"AbstractBlockMixin"
+	],
+	"client": [
 		"ClientPlayerInteractionManagerMixin"
 	],
 	"injectors": {
