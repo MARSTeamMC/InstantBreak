@@ -1,3 +1,4 @@
 {
-  "key.enable_break_delay": "Enable Break Delay"
+  "key.category.instantbreak_mt.instantbreak": "InstantBreak",
+  "key.instantbreak_mt.enable_break_delay": "Enable Break Delay"
 }
