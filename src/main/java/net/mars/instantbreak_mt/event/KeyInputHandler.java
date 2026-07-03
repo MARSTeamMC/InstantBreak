@@ -8,7 +8,8 @@ import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
 public class KeyInputHandler {
-    public static final String KEY_ENABLE_BREAK_DELAY = "key.enable_break_delay";
+    public static final String KEY_ENABLE_BREAK_DELAY = "key.instantbreak_mt.enable_break_delay";
+    public static final String KEY_CATEGORY_INSTANTBREAK = "key.category.instantbreak_mt.instantbreak";
 
     public static KeyBinding breakDelayKey;
 
@@ -25,7 +26,7 @@ public class KeyInputHandler {
                 KEY_ENABLE_BREAK_DELAY,
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_R,
-                KeyBinding.GAMEPLAY_CATEGORY
+                KEY_CATEGORY_INSTANTBREAK
         ));
 
         registerKeyInputs();
