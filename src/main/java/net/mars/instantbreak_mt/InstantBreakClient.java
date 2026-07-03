@@ -25,6 +25,7 @@ public class InstantBreakClient {
 
     @SubscribeEvent
     public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
+        event.registerCategory(KeyMappingsRegistry.KEY_CATEGORY_INSTANTBREAK);
         event.register(KeyMappingsRegistry.breakDelayKey);
     }
 
