@@ -5,7 +5,7 @@ import net.mars.instantbreak_mt.InstantBreakClient;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
@@ -34,7 +34,7 @@ public class BreakDelayIndicator {
                         o = i + 91 + 6 + h;
                     }
 
-                    graphics.blit(RenderPipelines.GUI_TEXTURED, BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
+                    graphics.blit(RenderType.GUI_TEXTURED, BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
                 }
             }
         }

@@ -15,7 +15,7 @@ import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 
 @Mod(value = InstantBreak.MOD_ID, dist = Dist.CLIENT)
-@EventBusSubscriber(modid = InstantBreak.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = InstantBreak.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class InstantBreakClient {
     public InstantBreakClient(ModContainer container) {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
