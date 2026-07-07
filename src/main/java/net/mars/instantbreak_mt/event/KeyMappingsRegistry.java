@@ -4,7 +4,6 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.mars.instantbreak_mt.InstantBreak;
 import net.mars.instantbreak_mt.InstantBreakClient;
 import net.minecraft.client.KeyMapping;
-import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -13,7 +12,7 @@ import org.lwjgl.glfw.GLFW;
 
 public class KeyMappingsRegistry {
     public static final String KEY_ENABLE_BREAK_DELAY = "key.instantbreak_mt.enable_break_delay";
-    public static final KeyMapping.Category KEY_CATEGORY_INSTANTBREAK = new KeyMapping.Category(ResourceLocation.fromNamespaceAndPath(InstantBreak.MOD_ID, "instantbreak"));
+    public static final String KEY_CATEGORY_INSTANTBREAK = "key.category.instantbreak_mt.instantbreak";
 
     public static final KeyMapping breakDelayKey = new KeyMapping(
             KEY_ENABLE_BREAK_DELAY,
