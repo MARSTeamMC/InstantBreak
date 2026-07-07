@@ -34,7 +34,7 @@ public class BreakDelayIndicator {
                         o = i + 91 + 6 + h;
                     }
 
-                    graphics.blit(RenderType.GUI_TEXTURED, BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
+                    graphics.blit(BREAK_DELAY_ICON, o, n, 26, 22, 26, 22, 26, 22);
                 }
             }
         }
