@@ -2,7 +2,7 @@ package net.mars.instantbreak_mt;
 
 import net.mars.instantbreak_mt.client.BreakDelayIndicator;
 import net.mars.instantbreak_mt.event.KeyMappingsRegistry;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -31,7 +31,7 @@ public class InstantBreakClient {
 
     @SubscribeEvent
     public static void registerGuiLayers(RegisterGuiLayersEvent event) {
-        event.registerAbove(VanillaGuiLayers.CHAT, Identifier.fromNamespaceAndPath(InstantBreak.MOD_ID,
+        event.registerAbove(VanillaGuiLayers.CHAT, ResourceLocation.fromNamespaceAndPath(InstantBreak.MOD_ID,
                 "break_delay"), BreakDelayIndicator::render);
     }
 }

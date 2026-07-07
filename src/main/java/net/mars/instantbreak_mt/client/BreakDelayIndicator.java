@@ -4,17 +4,17 @@ import net.mars.instantbreak_mt.InstantBreak;
 import net.mars.instantbreak_mt.InstantBreakClient;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.RenderPipelines;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Items;
 
 public class BreakDelayIndicator {
-    private static final Identifier BREAK_DELAY_ICON = Identifier.fromNamespaceAndPath(InstantBreak.MOD_ID, "textures/hud/break_delay.png");
+    private static final ResourceLocation BREAK_DELAY_ICON = ResourceLocation.fromNamespaceAndPath(InstantBreak.MOD_ID, "textures/hud/break_delay.png");
 
-    public static void render(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker) {
+    public static void render(GuiGraphics graphics, DeltaTracker deltaTracker) {
         if (InstantBreakClient.breakDelayEnabled) {
             Minecraft client = Minecraft.getInstance();
             if (client != null) {
