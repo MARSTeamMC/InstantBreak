@@ -19,7 +19,7 @@ public class BreakDelayIndicator {
             Minecraft client = Minecraft.getInstance();
             if (client != null) {
                 Player playerEntity = client.player;
-                if (playerEntity != null && !playerEntity.isSpectator() && !client.options.hideGui) {
+                if (playerEntity != null && !playerEntity.isSpectator() && !client.gui.hud.isHidden()) {
                     HumanoidArm arm = playerEntity.getMainArm().getOpposite();
                     boolean ItemInOffHand = !playerEntity.getInventory().getItem(40).getItem().equals(Items.AIR);
 
